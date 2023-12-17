@@ -10,10 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
         gsap.to(".greensock", {
             duration: 2,
             x: 600,
-            y: 250,
-            scale: 3,
+            y: 200,
+            scale: 2,
             rotation: 360,
-            delay: 1
+            delay: 1,
+            stagger: 1,
+            // ease: "elastic",
+            scrub: true,
         });
         })
 
