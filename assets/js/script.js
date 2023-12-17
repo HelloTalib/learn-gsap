@@ -5,14 +5,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log('DOM fully loaded and parsed');
     window.addEventListener('load', function () {
-        console.log(gsap);
-
         // do something
-        // console.log('All assets are loaded');
+
+        gsap.to(".greensock", {
+            duration: 2,
+            x: 600,
+            y: 250,
+            scale: 3,
+            rotation: 360,
+            delay: 1
+        });
+        })
 
 
-    }
-    )
 }
 );
 
